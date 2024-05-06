@@ -1,13 +1,15 @@
 package com.lxzn.userservce;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class UserServceApplication {
+@MapperScan("com/lxzn/userservce/mapper")
+public class UserServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(UserServceApplication.class, args);
+        SpringApplication.run(UserServiceApplication.class, args);
     }
 
 }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="generator.mapper.UserInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.lxzn.userservce.model.domain.UserInfo">
+            <id property="userId" column="user_id" jdbcType="INTEGER"/>
+            <result property="userName" column="user_name" jdbcType="VARCHAR"/>
+            <result property="userAccount" column="user_account" jdbcType="VARCHAR"/>
+            <result property="userPassword" column="user_password" jdbcType="VARCHAR"/>
+            <result property="userAvatar" column="user_avatar" jdbcType="VARCHAR"/>
+            <result property="userEmail" column="user_email" jdbcType="VARCHAR"/>
+            <result property="planetNumber" column="planet_number" jdbcType="INTEGER"/>
+            <result property="userPhoneNumber" column="user_phone_number" jdbcType="VARCHAR"/>
+            <result property="userGender" column="user_gender" jdbcType="INTEGER"/>
+            <result property="userStatus" column="user_status" jdbcType="INTEGER"/>
+            <result property="userPermissions" column="user_permissions" jdbcType="INTEGER"/>
+            <result property="createDate" column="create_date" jdbcType="TIMESTAMP"/>
+            <result property="updateDate" column="update_date" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        user_id,user_name,user_account,
+        user_password,user_avatar,user_email,
+        planet_number,user_phone_number,user_gender,
+        user_status,user_permissions,create_date,
+        update_date
+    </sql>
+</mapper>
