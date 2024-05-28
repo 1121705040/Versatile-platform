@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gkxsoj.mapper.ProblemsMapper">
+
+    <resultMap id="BaseResultMap" type="com.gkxsoj.model.entity.Problems">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="title" column="title" jdbcType="VARCHAR"/>
+            <result property="userId" column="userId" jdbcType="BIGINT"/>
+            <result property="pbDesc" column="pbDesc" jdbcType="VARCHAR"/>
+            <result property="commitCount" column="commitCount" jdbcType="INTEGER"/>
+            <result property="pbInOutDesc" column="pbInOutDesc" jdbcType="VARCHAR"/>
+            <result property="pbInOutSpl" column="pbInOutSpl" jdbcType="VARCHAR"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,title,userId,
+        pbDesc,commitCount,pbInOutDesc,
+        pbInOutSpl,createTime,updateTime,
+        isDelete
+    </sql>
+</mapper>
